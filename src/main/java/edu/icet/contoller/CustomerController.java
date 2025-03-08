@@ -1,13 +1,18 @@
 package edu.icet.contoller;
 
 import edu.icet.model.Customer;
+import edu.icet.service.custom.ProductService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+@RestController  //---> @Controller + @ResponseBody + @Component
 public class CustomerController {
+
+    @Autowired
+    ProductService service;
 
     // ******************* PathVariable **********************
     // -------> 56373372v
