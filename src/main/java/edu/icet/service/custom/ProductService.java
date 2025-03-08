@@ -1,7 +1,11 @@
 package edu.icet.service.custom;
 
+import edu.icet.model.Product;
 import org.springframework.stereotype.Service;
 
-@Service
+import java.util.List;
+
 public interface ProductService {
+
+    List<Product> getProduct();
 }
